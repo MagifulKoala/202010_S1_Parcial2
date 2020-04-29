@@ -22,6 +22,17 @@ export class SeriesListarComponent implements OnInit {
       });
   }
 
+
+  getPromedio(series: Series[]): number {
+    let totalSeasons: number = 0;
+    let numSeries: number = 0;
+
+    series.forEach((seasons) => totalSeasons = totalSeasons + seasons.seasons ,
+    numSeries = numSeries++);
+
+    return totalSeasons/numSeries;
+  }
+
   ngOnInit() {
     this.getSeries();
   }
