@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 
 
 import {SeriesListarComponent} from './series-listar/series-listar.component';
+import {SeriesDetailComponent} from './series-detail/series-detail.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [SeriesListarComponent],
+  declarations: [SeriesListarComponent,SeriesDetailComponent],
   exports: [SeriesListarComponent]
 })
 

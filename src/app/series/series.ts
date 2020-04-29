@@ -1,11 +1,12 @@
 export class Series {
 
 
-  constructor(private nameA: string, private channelA: string, private seasonsA: number,
+  constructor(private idA: number, private nameA: string, private channelA: string, private seasonsA: number,
               private descriptionA: string, private webpageA: string, private posterA: string,) {
 
                }
 
+  get id(): number { return this.idA; }
   get name(): string { return this.nameA; }
   get channel(): string { return this.channelA; }
   get seasons(): number { return this.seasonsA; }
